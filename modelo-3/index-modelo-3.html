@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --azul-oscuro: #004c97;
+        --celeste: #00a3e0;
+        --plomo: #606060;
+        --plomo-fondo: #f9f9f8;
+        --white: #ffffff;
+        --font-arial: Arial;
+        --font-arial-black: 'Arial Black';
+      }
+      .body-container {
+        width: 600px;
+        height: 393px;
+        padding-top: 50px;
+        margin: 0 auto;
+        font-family: var(--font-arial);
+        background-color: var(--plomo-fondo);
+      }
+      .container {
+        width: 70%;
+        margin: 0 auto;
+      }
+      .title {
+        font-size: 23px;
+        text-align: center;
+      }
+
+      /*
+      * HEADER
+      */
+      .header__title {
+        color: var(--celeste);
+        font-weight: bold;
+      }
+      .header__span {
+        color: var(--celeste);
+      }
+
+      /*
+      * Main
+      */
+      .main {
+        text-align: center;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .main__nombre {
+        font-family: var(--font-arial-black);
+        font-weight: bold;
+        font-size: 15px;
+        text-transform: uppercase;
+        color: var(--azul-oscuro);
+      }
+
+      .operation {
+        margin: 20px 0;
+        width: 386px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        border: 1.8pt solid var(--plomo);
+        border-radius: 10px;
+        background-color: var(--white);
+        padding: 20px 30px;
+        font-size: 14.9px;
+      }
+      .operation__title {
+        color: var(--azul-oscuro);
+        font-weight: bold;
+      }
+      .operation__paragraph {
+        color: var(--plomo);
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body-container">
+      <header class="header container">
+        <h1 class="header__title title">Hola %s,</h1>
+      </header>
+      <main class="main container">
+        <h2 class="main__nombre">
+          Para seguir con tu solicitud,<br />
+          ingresa el código de verificación
+        </h2>
+        <section class="operation">
+          <div class="operation__title">Código de verificación</div>
+          <div class="operation__paragraph">
+            <p class="operation__detail">%s</p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
