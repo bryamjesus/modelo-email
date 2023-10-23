@@ -9,25 +9,16 @@
         padding: 0;
         box-sizing: border-box;
       }
-      :root {
-        --azul-oscuro: #004c97;
-        --celeste: #00a3e0;
-        --plomo: #606060;
-        --plomo-fondo: #f9f9f8;
-        --white: #ffffff;
-        --font-arial: Arial;
-        --font-arial-black: 'Arial Black';
-      }
       .body-container {
         width: 600px;
         height: 393px;
         padding-top: 50px;
         margin: 0 auto;
-        font-family: var(--font-arial);
-        background-color: var(--plomo-fondo);
+        font-family: Arial;
+        background-color: #f9f9f8;
       }
       .container {
-        width: 70%;
+        width: 450px;
         margin: 0 auto;
       }
       .title {
@@ -39,11 +30,11 @@
       * HEADER
       */
       .header__title {
-        color: var(--celeste);
+        color: #00a3e0;
         font-weight: bold;
       }
       .header__span {
-        color: var(--celeste);
+        color: #00a3e0;
       }
 
       /*
@@ -52,39 +43,32 @@
       .main {
         text-align: center;
         padding: 20px 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        margin: 0 auto;
       }
       .main__nombre {
-        font-family: var(--font-arial-black);
+        font-family: 'Arial Black';
         font-weight: bold;
         font-size: 15px;
         text-transform: uppercase;
-        color: var(--azul-oscuro);
+        color: #004c97;
       }
 
       .operation {
-        margin: 20px 0;
+        margin: 20px auto;
         width: 386px;
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-        border: 1.8pt solid var(--plomo);
+        border: 1.8pt solid #606060;
         border-radius: 10px;
-        background-color: var(--white);
+        background-color: #ffffff;
         padding: 20px 30px;
         font-size: 14.9px;
       }
       .operation__title {
-        color: var(--azul-oscuro);
+        color: #004c97;
         font-weight: bold;
+        margin-bottom: 4px;
       }
       .operation__paragraph {
-        color: var(--plomo);
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
+        color: #606060;
       }
     </style>
   </head>
