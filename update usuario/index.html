@@ -9,6 +9,9 @@
         padding: 0;
         box-sizing: border-box;
       }
+      img {
+        width: 100%;
+      }
       .body-container {
         width: 600px;
         height: 450px;
@@ -73,6 +76,9 @@
   </head>
   <body>
     <div class="body-container">
+      <nav>
+        <img src='cid:Email_ONE-CARD_cintillo.jpg' />
+      </nav>
       <header class="header container">
         <h1 class="header__title title">
           ¡TU <span class="header__span">USUARIO DIGITAL<br /></span> HA SIDO
@@ -80,68 +86,21 @@
         </h1>
       </header>
       <main class="main container">
-        <h2 class="main__nombre title">Hola %s,</h2>
+        <h2 class="main__nombre title">Hola [NOMBRE],</h2>
         <section class="operation">
           <div class="operation__title">
             Te compartimos los datos de tu operacion:
           </div>
           <div class="operation__paragraph">
-            <p class="operation__detail">Código de la operación: %s</p>
-            <p class="operation__detail">Tipo de operación: %s</p>
-            <p class="operation__detail">Fecha y Hora: %s</p>
+            <p class="operation__detail">Código de la operación: [COD_OPE]</p>
+            <p class="operation__detail">Tipo de operación: [TIPO_OPE]</p>
+            <p class="operation__detail">Fecha y Hora: [FECHA]</p>
           </div>
         </section>
       </main>
+      <footer>
+        <img src='cid:Email_ONE-CARD_cierre.jpg' />
+      </footer>
     </div>
   </body>
 </html>
-<!-- 
-  <!DOCTYPE html>
-<html>
-<head>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .header {
-            text-align: center;
-        }
-
-        .message {
-            margin-top: 20px;
-            line-height: 1.6;
-        }
-
-        .signature {
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <h1>Buenas(os) días/tardes/noches estimado %s,</h1>
-        </div>
-        <div class="message">
-            <p>El presente es para indicarle que ha realizado con éxito la actualización de email en la aplicación One Card.</p>
-            <p>Gracias por su atención.</p>
-        </div>
-        <div class="signature">
-            <p>Atentamente,<br>Equipo One Card.</p>
-        </div>
-    </div>
-</body>
-</html>
- -->

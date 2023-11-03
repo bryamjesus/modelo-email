@@ -7,6 +7,9 @@
         padding: 0;
         box-sizing: border-box;
       }
+      img {
+        width: 100%;
+      }
       .body-container {
         width: 600px;
         height: 880px;
@@ -72,10 +75,16 @@
         font-size: 15px;
         padding: 10px 55px;
       }
+      .conocer__img {
+        padding: 30px 0;
+      }
     </style>
   </head>
   <body>
     <div class="body-container">
+      <nav>
+        <img src="../img/Email_ONE-CARD_headerTarjeta.jpg" alt="" />
+      </nav>
       <header class="header container">
         <h1 class="header__title title">
           ¡TU <span class="header__span">TARJETA ONE CARD<br /></span> HA SIDO
@@ -83,16 +92,16 @@
         </h1>
       </header>
       <main class="main container">
-        <h2 class="main__nombre title">Hola %s,</h2>
+        <h2 class="main__nombre title">Hola [NOMBRE],</h2>
         <section class="operation">
           <div class="operation__title">
             Te compartimos los datos de tu operacion:
           </div>
           <div class="operation__paragraph">
-            <p class="operation__detail">Código de la operación: %s</p>
-            <p class="operation__detail">Tipo de operación: %s</p>
-            <p class="operation__detail">Fecha y Hora: %s</p>
-            <p class="operation__detail">Número de tarjeta: %s</p>
+            <p class="operation__detail">Código de la operación: [COD_OPE]</p>
+            <p class="operation__detail">Tipo de operación: [TIPO_OPE]</p>
+            <p class="operation__detail">Fecha y Hora: [FECHA]</p>
+            <p class="operation__detail">Número de tarjeta: [NUM_TARJ]</p>
             <p class="operation__detail">Estado: Activada</p>
           </div>
         </section>
@@ -102,6 +111,12 @@
           </p>
         </section>
       </main>
+      <section class="conocer">
+        <img class="conocer__img" src="../img/Email_ONE-CARD_boton.jpg" />
+      </section>
+      <footer class="footer">
+        <img src="../img/Email_ONE-CARD_cierre.jpg" />
+      </footer>
     </div>
   </body>
 </html>
