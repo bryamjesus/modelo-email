@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .body-container {
+        width: 600px;
+        height: 549px;
+        margin: 0 auto;
+        padding-top: 50px;
+        font-family: Arial;
+        background-color: #f9f9f8;
+      }
+      .container {
+        width: 450px;
+        margin: 0 auto;
+      }
+      .title {
+        font-size: 23px;
+        text-align: center;
+      }
+
+      /*
+      * HEADER
+      */
+      .header__title {
+        font-family: 'Arial Black';
+        color: #004c97;
+      }
+      .header__span {
+        color: #00a3e0;
+      }
+
+      /*
+      * Main
+      */
+      .main {
+        padding: 20px 0;
+        margin: 0 auto;
+      }
+      .main__nombre {
+        font-weight: bold;
+        color: #00a3e0;
+      }
+
+      .operation {
+        margin: 20px auto;
+        width: 386px;
+        border: 1.8pt solid #606060;
+        border-radius: 10px;
+        background-color: #ffffff;
+        padding: 20px 30px;
+        font-size: 14.9px;
+      }
+      .operation__title {
+        color: #004c97;
+        font-weight: bold;
+        margin-bottom: 4px;
+      }
+      .operation__paragraph {
+        color: #606060;
+      }
+      .operation__detail {
+        margin-bottom: 4px;
+      }
+      .mensaje {
+        text-align: center;
+        font-weight: bold;
+        color: #004c97;
+        font-size: 15px;
+        padding: 10px 55px;
+      }
+      .mensaje__text--bold {
+        font-family: 'Arial Black';
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body-container">
+      <header class="header container">
+        <h1 class="header__title title">
+          TU TARJETA HA SIDO <br /><span class="header__span"
+            >DESACTIVADA TEMPORALMENTE</span
+          > PARA COMPRAS ONLINE
+        </h1>
+      </header>
+      <main class="main container">
+        <h2 class="main__nombre title">Hola %s,</h2>
+        <section class="operation">
+          <div class="operation__title">
+            Te compartimos los datos de tu operacion:
+          </div>
+          <div class="operation__paragraph">
+            <p class="operation__detail">Código de la operación: %s</p>
+            <p class="operation__detail">Tipo de operación: %s</p>
+            <p class="operation__detail">Fecha y Hora: %s</p>
+            <p class="operation__detail">Número de tarjeta: %s</p>
+            <p class="operation__detail">Estado de bloqueo: Desactivada</p>
+          </div>
+        </section>
+        <section class="mensaje">
+          <p class="mensaje__text">
+            Podrás volver a
+            <span class="mensaje__text--bold">activar tu tarjeta</span> desde la
+            APP
+          </p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
